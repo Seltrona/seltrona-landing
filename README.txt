@@ -41,3 +41,5 @@ LISTA ANTES DE PUBLICAR
 [ ] Aplicar únicamente los registros exactos solicitados por Vercel, sin tocar correo ni subdominios del SaaS.
 [ ] Confirmar HTTPS, redirección entre www y raíz y carga de imágenes.
 [ ] Probar el sitio desde móvil y computadora después de publicar.
+
+Actualización inicial para activar deployment en Vercel

@@ -212,7 +212,32 @@
       <p>Presiona Esc o el botón × para cerrar</p>
     </dialog>
 
+
+  <button class="back-to-top" id="back-to-top" type="button"
+          aria-label="Volver al inicio" title="Volver al inicio">
+    <span aria-hidden="true">↑</span>
+  </button>
+
   <script src="contact-config.js"></script>
   <script src="script.js"></script>
+
+  <script>
+    (() => {
+      const backToTop = document.getElementById("back-to-top");
+      if (!backToTop) return;
+
+      const updateBackToTop = () => {
+        backToTop.classList.toggle("is-visible", window.scrollY > 350);
+      };
+
+      window.addEventListener("scroll", updateBackToTop, { passive: true });
+      updateBackToTop();
+
+      backToTop.addEventListener("click", () => {
+        window.scrollTo({ top: 0, behavior: "smooth" });
+      });
+    })();
+  </script>
+
 </body>
 </html>

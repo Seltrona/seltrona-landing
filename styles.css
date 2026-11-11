@@ -261,3 +261,58 @@
     height: 44px;
   }
 }
+
+
+/* Nueva identidad y esencia de SELTRONA */
+.essence-section{max-width:1184px;margin:auto;padding:95px 28px}.essence-heading{max-width:760px;margin:0 auto 42px;text-align:center}.essence-heading h2{margin:0 0 16px;color:var(--navy);font:800 clamp(31px,4vw,44px)/1.15 Manrope,sans-serif;letter-spacing:-1.4px}.essence-heading h2 span{background:linear-gradient(100deg,var(--blue),var(--cyan));-webkit-background-clip:text;background-clip:text;color:transparent}.essence-heading p{margin:0;color:var(--muted);line-height:1.75}.acronym-grid{display:grid;grid-template-columns:repeat(4,1fr);gap:16px}.acronym-card{min-height:168px;padding:22px;border:1px solid var(--line);border-radius:17px;background:linear-gradient(180deg,#fff,#f8fbfe);transition:transform .2s,box-shadow .2s,border-color .2s}.acronym-card:hover{transform:translateY(-4px);border-color:#b8d9ef;box-shadow:0 16px 42px #10294b12}.acronym-letter{display:inline-grid;place-items:center;width:48px;height:48px;margin-bottom:16px;border-radius:14px;background:linear-gradient(135deg,var(--blue),var(--cyan));color:#fff;font:800 25px Manrope,sans-serif;box-shadow:0 10px 24px #0c80ce2a}.acronym-card h3{margin:0 0 7px;color:var(--navy);font:700 16px/1.25 Manrope,sans-serif}.acronym-card p{margin:0;color:#6d7b8f;font-size:12px;line-height:1.6}.essence-message{margin-top:34px;padding:22px 28px;border-radius:16px;background:linear-gradient(110deg,#10213e,#0c568b);color:#fff;text-align:center;box-shadow:0 20px 50px #10294b1f}.essence-message strong{font:700 clamp(17px,2.1vw,24px)/1.35 Manrope,sans-serif}@media(max-width:900px){.acronym-grid{grid-template-columns:repeat(2,1fr)}}@media(max-width:640px){.essence-section{padding:70px 20px}.acronym-grid{grid-template-columns:1fr}.acronym-card{min-height:0;padding:20px}.essence-message{padding:20px}}
+
+
+/* Ajuste final: letras de SELTRONA integradas visualmente en cada palabra */
+.essence-section {
+  padding-top: 90px;
+}
+.acronym-card {
+  min-height: 126px;
+  padding: 18px 20px;
+}
+.acronym-title {
+  display: flex;
+  align-items: center;
+  gap: 3px;
+  margin-bottom: 12px;
+  min-width: 0;
+}
+.acronym-letter {
+  flex: 0 0 auto;
+  width: 42px;
+  height: 42px;
+  margin: 0;
+  border-radius: 12px;
+  font-size: 22px;
+}
+.acronym-card h3 {
+  margin: 0;
+  font-size: 18px;
+  line-height: 1.15;
+  letter-spacing: -0.3px;
+}
+.acronym-card p {
+  padding-left: 1px;
+}
+@media (max-width: 640px) {
+  .acronym-card {
+    padding: 16px 18px;
+  }
+  .acronym-title {
+    gap: 2px;
+    margin-bottom: 10px;
+  }
+  .acronym-letter {
+    width: 40px;
+    height: 40px;
+    font-size: 21px;
+  }
+  .acronym-card h3 {
+    font-size: 17px;
+  }
+}
